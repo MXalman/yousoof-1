@@ -1,0 +1,70 @@
+ .title{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+ }
+
+ .title span{
+    color: #4fb9af;
+ }
+
+.experience {
+    padding-left: 2rem;
+    border-left: 1px solid #303030;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.experience:last-child {
+padding-bottom: 0;
+}
+.date{
+    margin-bottom: 0.5rem;
+}
+.company {
+    font-size: 0.75rem;
+    margin-top: 0.4rem;
+}
+
+.circle{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border: 100%;
+    background-color: #b3e0dc;
+    top: 4px;
+    left: -8px;
+    border-radius: 50%;
+}
+
+.services{
+     display: grid;
+     gap: 2rem;
+}
+.service {
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+.projects{
+    color: #fff;
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .services{
+        margin-top: 100px;
+    }
+    .lift_up{
+        margin-top: 150px;
+    }
+   
+    .main{
+       height: 120vh;
+      background-color: #00514A;
+    }
+  }

@@ -1,0 +1,271 @@
+.home {
+    height: 100vh;
+    background: url('../../../images/front.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.home-content { 
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #00514A;
+    animation: showRight 1s ease forwards;
+    animation-delay: .5s;
+    z-index: -1; /* Ensure this is behind the content */
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #00514A;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+    z-index: -1; /* Ensure this is behind the content */
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #28a99e;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #00514A;
+    animation: showRight 1s ease forwards;
+    animation-delay: .5s;
+    z-index: -1; /* Ensure this is behind the content */
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px; 
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #00514A;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: -1; /* Ensure this is behind the content */
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #28a99e;
+    border: 2px solid #28a99e;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #00514A;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #28a99e;
+}
+
+.btn-box a:nth-child(2) {
+    background-color: transparent;
+    color: #4fb9af;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: black;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #81cdc6;
+} 
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00514A;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    bottom: 2px; /* Adjust this value to move the icons down */
+    position: absolute;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #00514A;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
+    z-index: -1; /* Ensure this is behind the content */
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #b3e0dc;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #4fb9af;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #81cdc6;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+} 
+
+.home-sci a:hover {
+    color: #00514A;
+}
+
+.home-imageHover:hover {
+    background-color: #00514A;
+    opacity: .8;
+}
+
+@keyframes showRight {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes manipActiceHover {
+    100% {
+        pointer-events: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        width: 100%;
+        height: auto; /* Adjust height for smaller screens */
+        background: none; /* Remove background image */
+        padding: 0 5%;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        margin-top: 70px;
+        font-size: 2.5rem; /* Smaller font size for smaller screens */
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-box { 
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .btn-box a { 
+        width: 95%;
+        max-width: none; /* Allow buttons to take full width */
+        height: 60px; /* Increased button height on mobile */
+    }
+
+    .home-sci {
+        display: none; /* Hide social media icons on mobile */
+    }
+
+    .home-imageHover {
+        display: none; /* Ensure hover effect is hidden */
+    }
+}
