@@ -188,6 +188,6 @@
 
   .service-section .services-item {
     flex: 0 0 100%;
-    max-width: 95%;
+    max-width: 100%;
   }
 }

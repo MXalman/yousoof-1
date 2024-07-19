@@ -13,7 +13,7 @@ function App() {
       path: '/',
       element:
         <>
-          <div style={{ backgroundColor: '#00514A', height: '100vh'}}>
+          <div style={{ backgroundColor: '#00514A', height: '50vh'}}>
             <Navbar />
             <Content />
           </div>
