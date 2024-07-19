@@ -13,7 +13,7 @@ function App() {
       path: '/',
       element:
         <>
-          <div style={{ backgroundColor: '#00514A', height: '50vh'}}>
+          <div style={{ backgroundColor: '#00514A', height: '100vh'}}>
             <Navbar />
             <Content />
           </div>
@@ -31,7 +31,7 @@ function App() {
     },
     {
       path: '/Exp/Edu',
-      element: <><div style={{ backgroundColor: '#00514A', height: '220vh' }}><Navbar /> <ExpEdu /></div></>
+      element: <><div style={{ backgroundColor: '#00514A', height: '180vh' }}><Navbar /> <ExpEdu /></div></>
     },
     {
       path: '/portfolio',

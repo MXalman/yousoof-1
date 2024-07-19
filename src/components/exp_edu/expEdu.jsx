@@ -6,7 +6,7 @@ import React from 'react'
 const expEdu = () => {
   return (
     < >
-      <section style={{ height: '80rem' }} className='main'>
+      <section style={{ height: '40rem' }} className='main'>
         <div className="resume">
           <div className="container">
             <div className="top-title" style={{ fontSize: '35px', color: 'white' }}>resume</div>
@@ -14,36 +14,24 @@ const expEdu = () => {
             <div>
               <div className="experience">
                 <p className="date" style={{ color: 'white' }}>2021 - 2023</p>
-                <h3>Masters in Computer Science</h3>
+                <h3 style={{ color: 'white' }}>Masters in Computer Science</h3>
                 <p className="company" style={{ color: 'white' }} >Islamia University Bahawal-pur</p>
                 <div className="circle"></div>
               </div>
               <div className="experience">
                 <p className="date" style={{ color: 'white' }}>2019 - 2021</p>
-                <h3>Advanced Computer Science (ACS)</h3>
+                <h3 style={{ color: 'white' }}>Advanced Computer Science (ACS)</h3>
                 <p className="company" style={{ color: 'white' }}>Govt. post graducate college BahawalNagar</p>
-                <div className="circle"></div>
-              </div>
-              <div className="experience">
-                <p className="date" style={{ color: 'white' }}>2017 - 2019</p>
-                <h3>Intermediate Computer Science (ICS)</h3>
-                <p className="company" style={{ color: 'white' }}>Leeds Group Of Colleges</p>
-                <div className="circle"></div>
-              </div>
-              <div className="experience">
-                <p className="date" style={{ color: 'white' }}>Matric</p>
-                <h3>Computer Science</h3>
-                <p className="company" style={{ color: 'white' }}>Leeds School</p>
                 <div className="circle"></div>
               </div>
             </div>
           </div>
         </div>
-        <div className="services" style={{ marginTop: '600px' }}>
+        <div className="services" style={{ marginTop: '280px' }}>
           <div className="lift_up">
             <div className="container">
               <div className="top--title" style={{ color: 'white', fontSize: '35px', marginTop: '65px' }}> <u> Expertise </u></div>
-              <h2 className="title">My <span>Experience</span></h2>
+              <h2 className="title" style={{ color: 'white' }}>My <span>Experience</span></h2>
               <div className="services">
                 <div className="service" style={{ backgroundColor: '#28a99e' }}>
                   <h2 style={{ color: 'white' }}>Web Developer</h2>
